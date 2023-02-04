@@ -178,6 +178,7 @@
     font-display: swap;
 }
 
+/************************************/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -258,6 +259,7 @@
     padding-top: 84px;
 }
 
+/********************************/
 .empower {
     background-color: #E9E9E9;
     padding-top: 80px;
@@ -265,7 +267,7 @@
 }
 
 .empower-body {
-   padding: 0 19px 80px 19px;
+    padding: 0 19px 80px 19px;
     text-align: center;
 
 }
@@ -303,6 +305,39 @@
     margin-bottom: 25px;
 }
 
+/****************************/
+.empower-card-list {}
+
+.empower-card-items {}
+
+.empower-card-item {
+    background-color: #FFFFFF;
+    padding: 35px 40px;
+    margin-bottom: 30px;
+}
+
+.empower-card-item svg {
+    padding-bottom: 10px;
+}
+
+.empower-card-item h3 {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.empower-card-item p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+
 
 
 /**********         DF         *********/
@@ -316,15 +351,15 @@
     .header {
         flex-wrap: nowrap;
         align-items: flex-start;
+        padding: 40px 0;
     }
 
     .header-item {
         width: 33%;
     }
 
-    .head-logo {
-     
-    }
+    .head-logo {}
+
     .head-items {
         order: 3;
     }
@@ -355,7 +390,52 @@
         margin: 0;
     }
 
+    /*******************************/
     .empower {
         background-color: transparent;
+        padding: 80px 0;
+    }
+
+    .empower-body {
+        max-width: 509px;
+        text-align: start;
+    }
+
+    .empower-body__head {
+        padding-bottom: 35px;
+        text-align: start;
+    }
+
+    .empower-body__text {
+        padding: 0 0 35px 0;
+        text-align: start;
+
+    }
+
+    .empower-card {
+        margin-top: 80px;
+    }
+
+    .empower-card-list {
+        display: flex;
+        margin: 0 -15px;
+
+    }
+
+    .empower-card-items {
+        width: 33.333%;
+        padding: 0 15px;
+        background-color: transparent;
+        display: flex;
+
+    }
+
+    .empower-card-item {
+        background-color: #FFFFFF;
+        padding: 35px 40px;
+    }
+
+    .empower-body__button {
+        display: inline;
     }
 }
