@@ -299,7 +299,12 @@
 }
 
 .body-head--why-chose {
-    padding-bottom: 10px;
+    padding: 0 60px 10px 60px;
+}
+
+.body-head--practice {
+    text-transform: none;
+    padding: 0 88px 10px 88px;
 }
 
 .body-text {
@@ -312,6 +317,9 @@
     text-align: center;
 }
 
+.body-text--practice {
+    padding: 0 60px 75px 60px;
+}
 
 .empower-body__button {
     display: block;
@@ -357,15 +365,32 @@
     background-color: transparent;
     padding: 0 15px;
     width: 100%;
-
 }
-
-
 
 .card-item {
     background-color: #FFFFFF;
+}
+
+.card-item--empower {
     padding: 35px 40px;
     margin-bottom: 30px;
+}
+
+.card-item--why {
+    padding: 35px 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.card-item--practice {
+    margin-bottom: 30px;
+}
+
+.card-item--practice img {
+    height: 138px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .card-item:hover {
@@ -384,12 +409,12 @@
     color: #FFFFFF;
 }
 
-.card-item svg {
+.card-item__pic {
     padding-bottom: 10px;
 
 }
 
-.card-item h3 {
+.card-item__header {
     padding-bottom: 10px;
     font-weight: 700;
     font-size: 24px;
@@ -398,7 +423,14 @@
     color: #252B42;
 }
 
-.card-item p {
+.card-item__header--practice {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 0 15px 30px;
+    
+}
+
+.card-item__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -408,21 +440,34 @@
 
 }
 
+.card-item__text--practice {
+    margin-bottom: 0;
+    padding: 0px 135px 35px 30px;
+}
+
 /***********WHY CHOSE*****************/
 .why-chose {
-    background-color:  #F3F3F3;
+    background-color: #F3F3F3;
     padding-top: 98px;
     padding-bottom: 88px;
+    text-align: center;
 }
 
 .card-list--why {
     padding-top: 35px;
 }
 
-.card-item--why {
-    text-align: center;
-    height: 100%;
+/********Practice ********************/
+.practice {
+    padding-top: 128px;
+    background-color: #F3F3F3;
+    ;
 }
+
+
+
+
+
 
 /**********         DF         *********/
 @media (min-width: 768px) {
@@ -525,9 +570,11 @@
     .empower-body__button:first-of-type {
         margin-bottom: 0px;
     }
- .why-chose {
-    background: linear-gradient(180deg, #FAFAFA 0%, #E2E2E2 100%);
- }
+
+    .why-chose {
+        background: linear-gradient(180deg, #FAFAFA 0%, #E2E2E2 100%);
+    }
+
     .card-items--why {
         width: 25%;
     }
@@ -537,5 +584,39 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .body-head--why-chose {
+        text-align: center;
+    }
+
+    .body-text--why-chose {
+        text-align: center;
+    }
+
+    .body-head--practice {
+        font-size: 40px;
+        line-height: 57px;
+        text-align: center;
+    }
+
+    .body-text--practice {
+        width: 470px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .card-item__header--practice {
+        padding: 30px 100px 15px 33px;
+    }
+
+    .card-item__text--practice {
+        padding: 0 28px 30px 33px;
+    }
+
+    .card-item--practice{
+        padding: 0;
     }
 }
