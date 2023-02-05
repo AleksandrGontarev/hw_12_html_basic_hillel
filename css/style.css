@@ -229,6 +229,10 @@
     margin-bottom: 30px;
 }
 
+.head-menu a:hover {
+    color: #FFA62B;
+}
+
 .header-item {
     width: 50%;
 }
@@ -244,10 +248,18 @@
     justify-content: flex-start;
 }
 
+.head-pic:hover path {
+    fill: #FFA62B;
+}
+
 .head-items {
     order: 2;
     display: flex;
     justify-content: flex-end;
+}
+
+.head-items-hover:hover path {
+    fill: #FFA62B;
 }
 
 .head-menu {
@@ -259,7 +271,7 @@
     padding-top: 84px;
 }
 
-/********************************/
+/**************empower******************/
 .empower {
     background-color: #E9E9E9;
     padding-top: 80px;
@@ -298,22 +310,55 @@
     margin: 0 auto;
     padding: 10px 36px;
     border-radius: 37px;
+    border-color: #00A0C1;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #00A0C1;
+}
+
+.empower-body__button:hover {
+    background-color: #E2E2E2;
+}
+
+.empower-body__button--yellow {
+    background-color: #FFA62B;
+    color: #FFFFFF;
+}
+
+.empower-body__button--yellow:hover {
+    background-color: #16697A;
 }
 
 .empower-body__button:first-of-type {
     margin-bottom: 25px;
 }
 
-/****************************/
-.empower-card-list {}
-
-.empower-card-items {}
+/*************empower card***************/
 
 .empower-card-item {
     background-color: #FFFFFF;
     padding: 35px 40px;
     margin-bottom: 30px;
+}
+
+.empower-card-item:hover {
+    background-color: #00A0C1;
+}
+
+.empower-card-item:hover .empower-card-item__pic path {
+    fill: #FFFFFF;
+}
+
+.empower-card-item:hover .empower-card-item__header{
+    color: #FFFFFF;
+}
+
+.empower-card-item:hover .empower-card-item__text{
+    color: #FFFFFF;
 }
 
 .empower-card-item svg {
