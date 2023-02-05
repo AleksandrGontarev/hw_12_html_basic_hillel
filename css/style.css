@@ -210,7 +210,7 @@
 
 .header {
     padding-top: 22px;
-    padding-bottom: 98px;
+    padding-bottom: 69px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -268,7 +268,7 @@
     flex-direction: column;
     align-items: center;
     order: 3;
-    padding-top: 84px;
+    padding-top: 96px;
 }
 
 /**************empower******************/
@@ -279,7 +279,7 @@
 }
 
 .empower-body {
-    padding: 0 19px 80px 19px;
+    padding: 0 9px 80px 15px;
     text-align: center;
 
 }
@@ -295,11 +295,11 @@
 }
 
 .body-head--empower {
-    padding-bottom: 40px;
+    padding-bottom: 39px;
 }
 
 .body-head--why-chose {
-    padding: 0 60px 10px 60px;
+    padding: 0 55px 8px 55px;
 }
 
 .body-head--practice {
@@ -315,6 +315,16 @@
     color: #737373;
     padding: 0 16px 40px 16px;
     text-align: center;
+}
+
+.body-text--empower {
+    padding: 0 31px 38px 21px;
+}
+
+.body-text--why-chose {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 75px 15px 75px;
 }
 
 .body-text--practice {
@@ -343,6 +353,7 @@
 .empower-body__button--yellow {
     background-color: #FFA62B;
     color: #FFFFFF;
+    margin-bottom: 21px;
 }
 
 .empower-body__button--yellow:hover {
@@ -350,7 +361,7 @@
 }
 
 .empower-body__button:first-of-type {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 /*************empower card***************/
@@ -372,8 +383,8 @@
 }
 
 .card-item--empower {
-    padding: 35px 40px;
-    margin-bottom: 30px;
+    padding: 35px 39px;
+    margin-bottom: 32px;
 }
 
 .card-item--why {
@@ -410,24 +421,27 @@
 }
 
 .card-item__pic {
-    padding-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 
 .card-item__header {
     padding-bottom: 10px;
     font-weight: 700;
-    font-size: 24px;
+    /*font-size: 24px;
     line-height: 32px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.1px;*/
     color: #252B42;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
 }
 
 .card-item__header--practice {
     font-size: 16px;
     line-height: 24px;
     padding: 30px 0 15px 30px;
-    
+
 }
 
 .card-item__text {
@@ -448,7 +462,7 @@
 /***********WHY CHOSE*****************/
 .why-chose {
     background-color: #F3F3F3;
-    padding-top: 98px;
+    padding-top: 105px;
     padding-bottom: 88px;
     text-align: center;
 }
@@ -461,8 +475,10 @@
 .practice {
     padding-top: 128px;
     background-color: #F3F3F3;
-    ;
 }
+
+/************ WE ARE ****************/
+
 
 
 
@@ -594,6 +610,10 @@
         text-align: center;
     }
 
+    .practice {
+        background-color: #FAFAFA;
+    }
+
     .body-head--practice {
         font-size: 40px;
         line-height: 57px;
@@ -616,7 +636,7 @@
         padding: 0 28px 30px 33px;
     }
 
-    .card-item--practice{
+    .card-item--practice {
         padding: 0;
     }
 }
