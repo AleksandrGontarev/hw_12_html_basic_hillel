@@ -194,7 +194,7 @@
     font-weight: normal;
     font-style: normal;
     margin: 0 auto;
-    background-color: #F7F7F7;
+    background: #FAFAFA;
 }
 
 .body a {
@@ -284,18 +284,25 @@
 
 }
 
-.empower-body__head {
+.body-head {
     font-weight: 700;
     font-size: 36px;
     line-height: 57px;
     letter-spacing: 0.2px;
     color: #252B42;
-    padding-bottom: 40px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.empower-body__text {
+.body-head--empower {
+    padding-bottom: 40px;
+}
+
+.body-head--why-chose {
+    padding-bottom: 10px;
+}
+
+.body-text {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
@@ -304,6 +311,7 @@
     padding: 0 16px 40px 16px;
     text-align: center;
 }
+
 
 .empower-body__button {
     display: block;
@@ -339,33 +347,49 @@
 
 /*************empower card***************/
 
-.empower-card-item {
+.card-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -15px;
+}
+
+.card-items {
+    background-color: transparent;
+    padding: 0 15px;
+    width: 100%;
+
+}
+
+
+
+.card-item {
     background-color: #FFFFFF;
     padding: 35px 40px;
     margin-bottom: 30px;
 }
 
-.empower-card-item:hover {
+.card-item:hover {
     background-color: #00A0C1;
 }
 
-.empower-card-item:hover .empower-card-item__pic path {
+.card-item:hover .card-item__pic path {
     fill: #FFFFFF;
 }
 
-.empower-card-item:hover .empower-card-item__header{
+.card-item:hover .card-item__header {
     color: #FFFFFF;
 }
 
-.empower-card-item:hover .empower-card-item__text{
+.card-item:hover .card-item__text {
     color: #FFFFFF;
 }
 
-.empower-card-item svg {
+.card-item svg {
     padding-bottom: 10px;
+
 }
 
-.empower-card-item h3 {
+.card-item h3 {
     padding-bottom: 10px;
     font-weight: 700;
     font-size: 24px;
@@ -374,16 +398,31 @@
     color: #252B42;
 }
 
-.empower-card-item p {
+.card-item p {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #737373;
+    margin-bottom: auto;
+
 }
 
+/***********WHY CHOSE*****************/
+.why-chose {
+    background-color:  #F3F3F3;
+    padding-top: 98px;
+    padding-bottom: 88px;
+}
 
+.card-list--why {
+    padding-top: 35px;
+}
 
+.card-item--why {
+    text-align: center;
+    height: 100%;
+}
 
 /**********         DF         *********/
 @media (min-width: 768px) {
@@ -402,8 +441,6 @@
     .header-item {
         width: 33%;
     }
-
-    .head-logo {}
 
     .head-items {
         order: 3;
@@ -444,43 +481,61 @@
     .empower-body {
         max-width: 509px;
         text-align: start;
+        padding: 0;
     }
 
-    .empower-body__head {
+    .body-head {
         padding-bottom: 35px;
         text-align: start;
     }
 
-    .empower-body__text {
+    .body-text {
         padding: 0 0 35px 0;
         text-align: start;
 
     }
 
     .empower-card {
-        margin-top: 80px;
+        margin-top: 130px;
     }
 
-    .empower-card-list {
+    .card-list {
+        flex-direction: row;
+    }
+
+    .card-items {
+
         display: flex;
-        margin: 0 -15px;
-
     }
 
-    .empower-card-items {
+    .card-items--empower {
         width: 33.333%;
-        padding: 0 15px;
-        background-color: transparent;
-        display: flex;
-
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
-    .empower-card-item {
+    .card-item {
         background-color: #FFFFFF;
         padding: 35px 40px;
     }
 
     .empower-body__button {
         display: inline;
+    }
+
+    .empower-body__button:first-of-type {
+        margin-bottom: 0px;
+    }
+ .why-chose {
+    background: linear-gradient(180deg, #FAFAFA 0%, #E2E2E2 100%);
+ }
+    .card-items--why {
+        width: 25%;
+    }
+
+    .card-item--why {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
