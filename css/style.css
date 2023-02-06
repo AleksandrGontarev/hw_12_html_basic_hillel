@@ -290,34 +290,53 @@
     line-height: 57px;
     letter-spacing: 0.2px;
     color: #252B42;
-    text-transform: uppercase;
     text-align: center;
 }
 
 .body-head--empower {
     padding-bottom: 39px;
+    text-transform: uppercase;
 }
 
 .body-head--why-chose {
     padding: 0 55px 8px 55px;
+    text-transform: uppercase;
 }
 
 .body-head--practice {
-    text-transform: none;
     padding: 0 88px 10px 88px;
 }
 
 .body-head--we-are {
     padding: 182px 25px 0 25px;
-    text-transform: none;
 }
 
 .body-head--we-are-middle {
-    text-transform: none;
     text-align: start;
     padding-bottom: 10px;
 }
 
+.body-head--get-in {
+    padding-bottom: 10px;
+}
+
+.body-head--get-in-card {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.body-head--consulting {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    padding-bottom: 10px;
+}
+
+
+/******* body-text *********/
 .body-text {
     font-weight: 500;
     font-size: 20px;
@@ -356,6 +375,30 @@
     line-height: 20px;
     text-align: start;
     padding: 0 0 50px 0;
+}
+
+.body-text--get-in {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 60px;
+}
+
+.body-text--get-in-card {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    padding: 0;
+}
+
+.body-text--consulting {
+    font-size: 14px;
+    line-height: 20px;
+    width: 230px;
+    margin: 0 auto;
+    padding-bottom: 45px;
 }
 
 .empower-body__button {
@@ -463,7 +506,6 @@
     line-height: 32px;
     letter-spacing: 0.1px;
     color: #252B42;
-
 }
 
 .card-item__header--practice {
@@ -628,8 +670,79 @@
     border-radius: 0 4px 4px 0;
 }
 
+/******** GET-IN ***********/
+.get-in {
+    padding-top: 75px;
 
+    background-color: #F3F3F3;
+}
 
+.get-in__card-list {
+    margin: 0 -15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.get-in__card-items {
+    padding: 0 15px;
+    width: 100%;
+}
+
+.get-in__card-item {
+    background-color: #FFFFFF;
+    padding: 50px 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.get-in__card-icon {
+    margin-bottom: 10px;
+}
+
+.get-in__button {
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFA62B;
+    border: 1px solid #FFA62B;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+/**************************/
+.get-in__card-item--vvv {
+    height: 393px;
+}
+
+/*****************/
+
+/************ Consulting *******/
+.consulting {
+    background-color: #FAFAFA;
+  }
+
+.consulting-head {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.consulting__button {
+    padding: 15px 40px;
+    background: #FFA62B;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
 
 
 /**********         DF         *********/
