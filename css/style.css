@@ -307,6 +307,17 @@
     padding: 0 88px 10px 88px;
 }
 
+.body-head--we-are {
+    padding: 182px 25px 0 25px;
+    text-transform: none;
+}
+
+.body-head--we-are-middle {
+    text-transform: none;
+    text-align: start;
+    padding-bottom: 10px;
+}
+
 .body-text {
     font-weight: 500;
     font-size: 20px;
@@ -332,6 +343,19 @@
     font-size: 14px;
     line-height: 20px;
     padding: 0 60px 75px 60px;
+}
+
+.body-text--we-are {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 9px 60px 100px 60px;
+}
+
+.body-text--we-are-middle {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: start;
+    padding: 0 0 50px 0;
 }
 
 .empower-body__button {
@@ -401,6 +425,10 @@
     margin-bottom: 30px;
 }
 
+.card-item--practice-last {
+    margin-bottom: 0;
+}
+
 .card-item--practice img {
     height: 138px;
     width: 100%;
@@ -441,7 +469,7 @@
 .card-item__header--practice {
     font-size: 16px;
     line-height: 24px;
-    padding: 30px 0 15px 30px;
+    padding: 30px 173px 15px 30px;
 
 }
 
@@ -463,7 +491,7 @@
 
 .card-item__text--practice {
     margin-bottom: 0;
-    padding: 0px 135px 35px 30px;
+    padding: 0px 135px 30px 30px;
 }
 
 .card-item__text-why {
@@ -496,7 +524,109 @@
 
 /************ WE ARE ****************/
 
+.we-are-middle__pic {
+    position: relative;
+    margin-bottom: 68px;
+}
 
+.we-are-middle__play {
+    position: absolute;
+    top: 171px;
+    left: 122px;
+    z-index: 1;
+}
+
+.we-are-middle__bg-cover {
+    height: 442px;
+}
+
+.we-are-middle__body-icon {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.we-are-middle-text__xl {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.we-are-middle-text__l {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.we-are-middle__icon {
+    margin-right: 20px;
+}
+
+.we-are-list-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 152px;
+    padding-bottom: 24px;
+
+}
+
+.we-are-list-company a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+/*******  WE ARE EMAIL ********/
+.container-we-are-email {}
+
+.we-are-email {
+    background-color: #16697A;
+    padding: 30px 15px;
+}
+
+.we-are-email__text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+}
+
+.custom-input {
+    display: flex;
+}
+
+.custom-input__input {
+    width: 100%;
+    padding: 15px 0 15px 19px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background-color: #f1f1f1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.custom-input__button {
+    background-color: #FFA62B;
+    padding: 15px 31px 15px 25px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: start;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    border-radius: 0 4px 4px 0;
+}
 
 
 
@@ -504,6 +634,7 @@
 
 /**********         DF         *********/
 @media (min-width: 768px) {
+
     .body {
         background-image: url(../img/back-img.jpg);
         background-repeat: no-repeat;
