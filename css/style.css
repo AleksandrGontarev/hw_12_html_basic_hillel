@@ -396,7 +396,7 @@
 .body-text--consulting {
     font-size: 14px;
     line-height: 20px;
-    width: 230px;
+    max-width: 230px;
     margin: 0 auto;
     padding-bottom: 45px;
 }
@@ -414,6 +414,7 @@
     text-align: center;
     letter-spacing: 0.2px;
     color: #00A0C1;
+    background-color: transparent;
 }
 
 .empower-body__button:hover {
@@ -560,7 +561,7 @@
 
 /********Practice ********************/
 .practice {
-    padding-top: 95px;
+    padding-top: 70px;
     background-color: #F3F3F3;
 }
 
@@ -673,7 +674,6 @@
 /******** GET-IN ***********/
 .get-in {
     padding-top: 75px;
-
     background-color: #F3F3F3;
 }
 
@@ -713,17 +713,18 @@
     background-color: transparent;
 }
 
-/**************************/
-.get-in__card-item--vvv {
-    height: 393px;
-}
+/******************************/
 
-/*****************/
+.get-in__card-item--hover {}
+
+/********************************/
+
 
 /************ Consulting *******/
 .consulting {
     background-color: #FAFAFA;
-  }
+    padding-bottom: 43px;
+}
 
 .consulting-head {
     display: flex;
@@ -742,8 +743,82 @@
     text-align: center;
     letter-spacing: 0.2px;
     color: #FFFFFF;
+    border: none;
 }
 
+/***** Footer *******/
+.footer {
+    background: #16697A;
+}
+
+.footer__items {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 15px 20px 15px;
+}
+
+.footer__item {
+    padding-bottom: 20px;
+}
+
+.footer__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__list li {
+    padding-bottom: 10px;
+}
+
+.footer__header {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.footer__element {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    display: inline-flex;
+}
+
+.footer__pic {
+    margin-right: 10px;
+}
+
+/********** footer-btn *******/
+
+.footer-btn {
+    background: #FAFAFA;
+    padding-top: 25px;
+    padding-bottom: 55px;
+}
+
+.footer-btn__header {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+    max-width: 240px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.footer-btn__social {
+    text-align: center;
+}
+
+.footer-btn__pic {
+    margin: 0 10px;
+}
 
 /**********         DF         *********/
 @media (min-width: 768px) {
@@ -811,6 +886,12 @@
         text-align: start;
     }
 
+    .body-head--empower {
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 80px;
+    }
+
     .body-text {
         padding: 0 0 35px 0;
         text-align: start;
@@ -818,15 +899,18 @@
     }
 
     .empower-card {
-        margin-top: 130px;
+        margin-top: 75px;
     }
 
     .card-list {
         flex-direction: row;
     }
 
-    .card-items {
+    .card-list--why {
+        padding-top: 10px;
+    }
 
+    .card-items {
         display: flex;
     }
 
@@ -840,6 +924,14 @@
         padding: 35px 40px;
     }
 
+    .card-item--why {
+        padding: 35px 30px 0 30px;
+    }
+
+    .card-item__header--why {
+        padding-bottom: 15px;
+    }
+
     .empower-body__button {
         display: inline;
     }
@@ -850,6 +942,8 @@
 
     .why-chose {
         background: linear-gradient(180deg, #FAFAFA 0%, #E2E2E2 100%);
+        padding-top: 82px;
+        padding-bottom: 80px;
     }
 
     .card-items--why {
@@ -865,20 +959,107 @@
 
     .body-head--why-chose {
         text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    .body-head--we-are {
+        padding: 100px 0 15px 0;
+        text-align: center;
+        max-width: 511px;
+        margin: 0 auto;
     }
 
     .body-text--why-chose {
         text-align: center;
+        max-width: 511px;
+        margin: 0 auto;
+    }
+
+    .body-text--we-are {
+        text-align: center;
+        max-width: 511px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .we-are-middle__play {
+        top: 173px;
+        left: 245px;
+    }
+
+    .we-are-middle {
+        display: flex;
+    }
+
+    .we-are-middle__pic {
+        width: 58.333%;
+    }
+
+    .we-are-middle__body {
+        width: 41.667%;
+        padding: 23px 20px;
+    }
+
+    .body-head--we-are-middle {
+        padding-bottom: 10px;
+    }
+
+    .body-text--we-are-middle {
+        padding-bottom: 48px;
+    }
+
+    .we-are-middle__body-icon {
+        padding-bottom: 30px;
+    }
+
+    .we-are-middle-text__xl {
+        padding-bottom: 7px;
+    }
+
+    .we-are-list-company {
+        flex-direction: row;
+        padding-top: 75px;
+        padding-bottom: 4px;
+    }
+
+    .container-we-are-email {
+        position: relative;
+    }
+
+    .we-are-email {
+        max-width: 986px;
+        margin: 0 auto;
+        display: flex;
+        padding: 30px 50px;
+    }
+
+    .we-are-email-body {
+        width: 49%;
+    }
+
+    .we-are-email__text {
+        max-width: 260px;
+        text-align: start;
+        padding-bottom: 0;
+    }
+
+    .custom-input {
+        width: 51%;
     }
 
     .practice {
         background-color: #FAFAFA;
+        padding-top: 125px;
+        padding-bottom: 45px;
     }
 
     .body-head--practice {
         font-size: 40px;
         line-height: 57px;
         text-align: center;
+        padding-bottom: 10px;
     }
 
     .body-text--practice {
@@ -887,10 +1068,11 @@
         font-size: 14px;
         line-height: 20px;
         text-align: center;
+        padding-bottom: 45px;
     }
 
     .card-item__header--practice {
-        padding: 30px 100px 15px 33px;
+        padding: 30px 30px 15px 33px;
     }
 
     .card-item__text--practice {
@@ -900,4 +1082,127 @@
     .card-item--practice {
         padding: 0;
     }
+
+    .get-in {
+        padding-top: 100px;
+    }
+
+    .body-head--get-in {
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+        padding-bottom: 11px;
+    }
+
+    .body-text--get-in {
+        text-align: center;
+        max-width: 470px;
+        margin: 0 auto;
+        padding-bottom: 108px;
+    }
+
+    .get-in__card-list {
+        flex-direction: row;
+        margin: 0;
+        padding: 0 20px 150px 20px;
+    }
+
+    .get-in__card-items {
+        padding: 0;
+        width: 33.333%;
+    }
+
+    .get-in__card-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-in__card-icon {
+        margin-bottom: 17px;
+    }
+
+    .body-text--get-in-card {
+        padding: 0;
+    }
+
+    .body-head--get-in-card {
+        padding-bottom: 13px;
+    }
+
+    /******************************/
+    .get-in__card-item--hover {}
+
+    /******************************/
+
+    .consulting-head {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .consulting__button {
+        margin-right: 20px;
+    }
+
+    .body-head--consulting {
+        padding-bottom: 0;
+    }
+
+    .body-head--consulting {
+        width: 100%;
+        padding-bottom: 8px;
+    }
+
+    .body-text--consulting {
+        max-width: 100%;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .footer__items {
+        flex-direction: row;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .footer__item {
+        width: 16.666%;
+        padding-top: 50px;
+    }
+
+    .footer__item--icon {
+        width: 33.333%;
+        padding-left: 22px;
+    }
+
+    .footer-btn__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-btn__header {
+        width: 50%;
+        max-width: 100%;
+        text-align: start;
+    }
+
+    .footer-btn__social {
+        width: 50%;
+        text-align: end;
+        margin-right: 20px;
+    }
+
+    .footer-btn__pic {
+        margin-right: 10px;
+    }
+
+}
+
+.we-are {
+    background-image: url(../img/cover.png);
+    background-repeat: no-repeat;
+    background-position: center top;
 }
