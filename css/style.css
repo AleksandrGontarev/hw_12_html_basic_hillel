@@ -732,7 +732,9 @@
 }
 
 .get-in__card-item--hover:hover {
-    transform:scaleY(115%);
+    box-shadow: 0 -15px #252B42;
+    border-bottom: 15px solid #252B42;
+    margin-bottom: 15px;
 }
 
 .get-in__card-item--hover:hover>* {
@@ -1164,6 +1166,12 @@
 
     .get-in__card-icon {
         margin-bottom: 17px;
+    }
+
+    .get-in__card-item--hover:hover {
+        box-shadow: 0 -20px #252B42;
+        border-bottom: 20px solid #252B42;
+        margin-bottom: 0;
     }
 
     .body-text--get-in-card {
