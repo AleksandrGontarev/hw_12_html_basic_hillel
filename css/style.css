@@ -579,6 +579,10 @@
     z-index: 1;
 }
 
+.we-are-middle__play:hover rect {
+    fill: #E2E2E2;
+}
+
 .we-are-middle__bg-cover {
     height: 442px;
 }
@@ -621,6 +625,11 @@
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+}
+
+
+.we-are-list-company__pic:hover path {
+    fill: #FFA62B;
 }
 
 /*******  WE ARE EMAIL ********/
@@ -669,6 +678,11 @@
     letter-spacing: 0.2px;
     color: #FFFFFF;
     border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.custom-input__button:hover {
+    background-color: #E2E2E2;
 }
 
 /******** GET-IN ***********/
@@ -713,12 +727,27 @@
     background-color: transparent;
 }
 
-/******************************/
+.get-in__card-item--hover:hover {
+    background-color: #252B42;
+}
 
-.get-in__card-item--hover {}
+.get-in__card-item--hover:hover {
+    transform:scaleY(115%);
+}
 
-/********************************/
+.get-in__card-item--hover:hover>* {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
 
+.get-in__card-item--hover:hover .get-in__card-icon path {
+    fill: #FAFAFA;
+}
+
+.get-in__button:hover {
+    background-color: #FFFFFF;
+    color: #252B42;
+}
 
 /************ Consulting *******/
 .consulting {
@@ -744,6 +773,11 @@
     letter-spacing: 0.2px;
     color: #FFFFFF;
     border: none;
+    cursor: pointer;
+}
+
+.consulting__button:hover {
+    background-color: #16697A;
 }
 
 /***** Footer *******/
@@ -788,6 +822,10 @@
     display: inline-flex;
 }
 
+.footer__element:hover {
+    color: #FFA62B;
+}
+
 .footer__pic {
     margin-right: 10px;
 }
@@ -818,6 +856,10 @@
 
 .footer-btn__pic {
     margin: 0 10px;
+}
+
+.footer-btn__pic:hover path {
+    fill: #FFA62B;
 }
 
 /**********         DF         *********/
@@ -1131,11 +1173,6 @@
     .body-head--get-in-card {
         padding-bottom: 13px;
     }
-
-    /******************************/
-    .get-in__card-item--hover {}
-
-    /******************************/
 
     .consulting-head {
         flex-direction: row;
