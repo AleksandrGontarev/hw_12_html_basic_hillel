@@ -574,13 +574,14 @@
 
 .we-are-middle__play {
     position: absolute;
-    top: 171px;
-    left: 122px;
+    top: 40%;
+    left: 40%;
     z-index: 1;
 }
 
 .we-are-middle__play:hover rect {
     fill: #E2E2E2;
+
 }
 
 .we-are-middle__bg-cover {
@@ -1026,11 +1027,6 @@
         max-width: 511px;
         margin: 0 auto;
         padding-bottom: 100px;
-    }
-
-    .we-are-middle__play {
-        top: 173px;
-        left: 245px;
     }
 
     .we-are-middle {
